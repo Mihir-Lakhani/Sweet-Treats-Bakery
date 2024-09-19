@@ -1,0 +1,122 @@
+.cart-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.cart-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #eee;
+    margin-bottom: 20px;
+}
+
+.cart-header h1 {
+    font-size: 2rem;
+    color: #333;
+    margin: 0;
+}
+
+.cart-header .cart-actions {
+    display: flex;
+    gap: 15px;
+}
+
+.cart-header .cart-actions button {
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    cursor: pointer;
+    background-color: #007bff;
+    color: white;
+    transition: background-color 0.3s;
+}
+
+.cart-header .cart-actions button:hover {
+    background-color: #0056b3;
+}
+
+.cart-items {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.cart-item {
+    display: flex;
+    align-items: center;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+}
+
+.cart-item img {
+    width: 80px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 15px;
+}
+
+.cart-item-details {
+    flex: 1;
+}
+
+.cart-item-details h2 {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 0;
+}
+
+.cart-item-details p {
+    color: #666;
+    margin: 5px 0;
+}
+
+.cart-item-details .item-price {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: bold;
+}
+
+.cart-totals {
+    text-align: right;
+    padding: 20px;
+    border-top: 2px solid #eee;
+}
+
+.cart-totals h2 {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0;
+}
+
+.cart-totals p {
+    font-size: 1.2rem;
+    color: #333;
+    margin: 10px 0;
+}
+
+.checkout-button {
+    padding: 15px 20px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 8px;
+    background-color: #28a745;
+    color: white;
+    cursor: pointer;
+    text-align: center;
+    display: block;
+    margin: 20px auto;
+    transition: background-color 0.3s;
+}
+
+.checkout-button:hover {
+    background-color: #218838;
+}
