@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sweet Treats Bakery - Checkout</title>
+    <link rel="stylesheet" href="checkout.css">
+</head>
+<body>
+    <header>
+        <h1>S.T. Bakery</h1>
+        <span class="since">Since 1999</span>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="menu.html">Menu</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <div id="checkout">
+        <h2 class="checkout-heading">Checkout</h2>
+        <div id="cart-summary">
+            <h3>Your Cart Summary</h3>
+            <ul id="cart-items"></ul>
+            <p id="cart-total">Total: ₹0</p>
+        </div>
+        <form id="checkout-form">
+            <fieldset>
+                <legend>Delivery Information</legend>
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="address">Address:</label>
+                <textarea id="address" name="address" required></textarea>
+                <label for="phone">Phone Number:</label>
+                <input type="tel" id="phone" name="phone" required>
+            </fieldset>
+            <fieldset>
+                <legend>Payment Information</legend>
+                <label for="payment-method">Payment Method:</label>
+                <select id="payment-method" name="payment-method" required>
+                    <option value="credit-card">Credit Card</option>
+                    <option value="debit-card">Debit Card</option>
+                    <option value="net-banking">Net Banking</option>
+                    <option value="cash-on-delivery">Cash on Delivery</option>
+                </select>
+            </fieldset>
+            <button type="submit">Place Order</button>
+        </form>
+    </div>
+    
+    <footer>
+        <div class="footer-content">
+            <p>© 2024 Sweet Treats Bakery | Follow us on 
+                <a href="#">Facebook</a>, 
+                <a href="#">Instagram</a>
+            </p>
+        </div>
+    </footer>
+    <script src="checkout.js"></script>
+</body>
+</html>
